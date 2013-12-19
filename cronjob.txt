@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+    <key>Label</key>
+    <string>scott.ping-apis</string>
+
+    <key>ProgramArguments</key>
+    <array>
+      <string>/usr/bin/R</string>
+      <string>--vanilla</string>
+      <string>--slave</string>
+      <string>-f /Users/scottmac2/dostuff.r</string>
+    </array>
+
+    <key>KeepAlive</key>
+	<dict>
+	    <key>SuccessfulExit</key>
+	    <false/>
+	</dict>
+
+	<key>StandardOutPath</key>
+    	<string>/Users/scottmac2/outshitshit.txt</string>
+    
+    <key>StartInterval</key>
+    <integer>60</integer>
+
+</dict>
+</plist>
